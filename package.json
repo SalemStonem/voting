@@ -1,0 +1,52 @@
+{
+  "name": "EUP",
+  "version": "1.0.0",
+  "description": "Encuentra Un PRO",
+  "private": true,
+  "min": "app.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha ./test --reporter supersamples --compilers js:babel-core/register",
+    "dev": "NODE_ENV=development nodemon ./node_modules/.bin/babel-node ./app.js",
+    "start": "NODE_ENV=production ./node_modules/.bin/babel-node ./app.js"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "faker": "^4.1.0",
+    "mocha": "^4.0.1",
+    "mocha-clean": "^1.0.0",
+    "nodemon": "^1.18.2",
+    "should": "^13.1.3",
+    "supersamples": "^1.4.1",
+    "supertest": "^3.0.0",
+    "supertest-as-promised": "^4.0.2"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^1.4.0",
+    "async": "^2.6.1",
+    "axios": "^0.17.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cassandra-driver": "^3.3.0",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~3.1.0",
+    "express": "^4.16.3",
+    "json2csv": "^3.11.5",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.21",
+    "mongoose": "^5.2.4",
+    "morgan": "~1.9.0",
+    "node-uuid": "^1.4.8",
+    "openpay": "^1.0.2",
+    "postmark": "^1.4.1",
+    "request": "^2.87.0",
+    "sha1": "^1.1.1",
+    "socket.io": "^2.1.1",
+    "uid-safe": "^2.1.5",
+    "uuid": "^3.3.2",
+    "validator": "^9.4.1"
+  }
+}

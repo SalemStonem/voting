@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Asdeporte</title>
+      <link rel="stylesheet" href="css/foundation.min.css" />
+      <link rel="stylesheet" type="text/css" href="css/styles.css" />
+      <link rel="stylesheet" type="text/css" href="css/highlight.github.css" />
+      
+        <link rel="stylesheet" type="text/css" href="custom.css" />
+      
+  </head>
+
+
+  <body class="antialiased hide-extras">
+
+    <div class="sidebar-top">
+  <div class="logo"></div>
+  Asdeporte
+</div>
+
+<div class="sidebar">
+  
+  <form>
+    <input tabindex="1" id="autocomplete" type="search"
+          placeholder="search" autocomplete="off" />
+  </form>
+
+  <nav>
+    <ul class="side-nav">
+
+      
+
+          <li class="divider"></li>
+
+          <li class="heading">
+            <a href="asdeporte-miscroservice-for-test.html">Asdeporte miscroservice for Test</a>
+          </li>
+
+          
+            <li>
+              <a href="asdeporte-miscroservice-for-test.html#delete-id-pixel" data-search="DELETE:id Pixel">
+                DELETE:id Pixel
+                
+                  <span class="label">1</span>
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="asdeporte-miscroservice-for-test.html#delete-id-pixellist" data-search="DELETE:id PixelList">
+                DELETE:id PixelList
+                
+                  <span class="label">1</span>
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="asdeporte-miscroservice-for-test.html#get-list-pixel" data-search="GET:LIST Pixel">
+                GET:LIST Pixel
+                
+                  <span class="label">1</span>
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="asdeporte-miscroservice-for-test.html#get-list-pixellist" data-search="GET:LIST PixelList">
+                GET:LIST PixelList
+                
+                  <span class="label">1</span>
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="asdeporte-miscroservice-for-test.html#get-id-pixel" data-search="GET:id Pixel">
+                GET:id Pixel
+                
+                  <span class="label">1</span>
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="asdeporte-miscroservice-for-test.html#get-id-pixellist" data-search="GET:id PixelList">
+                GET:id PixelList
+                
+                  <span class="label">1</span>
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="asdeporte-miscroservice-for-test.html#post-pixel" data-search="POST Pixel">
+                POST Pixel
+                
+                  <span class="label">1</span>
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="asdeporte-miscroservice-for-test.html#post-pixellist" data-search="POST PixelList">
+                POST PixelList
+                
+                  <span class="label">1</span>
+                
+              </a>
+            </li>
+          
+
+      
+
+    </ul>
+  </nav>
+
+</div>
+
+
+    <div class="content-top"></div>
+    <div class="content">
+
+      <h1>Asdeporte miscroservice for Test</h1>
+
+      
+        <div class="group">
+          <a name="delete-id-pixel"></a>
+          <h2>DELETE:id Pixel</h2>
+          <ul class="samples">
+            
+              <li>
+                <div class="summary">
+  <p>DELETE:id Pixel</p>
+
+</div>
+
+<div class="operation">
+
+  <div class="method color-DELETE">
+    DEL
+  </div>
+
+  <div class="request">
+    <div class="url">
+      DELETE
+      
+        <pre><code>/v1/pixels/<span class="hljs-attribute">:pixel</span></code></pre>
+      
+    </div>
+    Sample request
+    <div class="expanders">
+      
+        <a href="#sample7-url">url</a><span>
+      
+      
+        <a href="#sample7-request-headers">headers</a><span>
+      
+      
+      
+      <a href="#sample7-request-curl">curl</a><span>
+    </div>
+  </div>
+
+  <div id="sample7-url" class="collapsible">
+    <pre><code>/v1/pixels/4ca14b63-aab0-4fb1-a0ad-a27848d54218</code></pre>
+  </div>
+  <div id="sample7-request-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">x-asd-apikey</span>: <span class="hljs-string">pub_nLbIjlCWNKAdB_O3qgTaoQ</span>
+</code></pre>
+  </div>
+  <div id="sample7-request-payload" class="collapsible">
+    
+  </div>
+  <div id="sample7-request-attachments" class="collapsible">
+    
+  </div>
+  <div id="sample7-request-curl" class="collapsible">
+    <pre><code class="wrap">curl -X <span class="hljs-keyword">DELETE</span> -H <span class="hljs-string">"x-asd-apikey: pub_nLbIjlCWNKAdB_O3qgTaoQ"</span> <span class="hljs-string">"https://api.asdeporte.com/v1/pixels/4ca14b63-aab0-4fb1-a0ad-a27848d54218"</span></code></pre>
+  </div>
+
+  <div class="response">
+    Response 201 Created
+    <div class="expanders">
+      
+        <a href="#sample7-response-headers">headers</a>
+      
+      
+        <a href="#sample7-response-body">body</a>
+      
+    </div>
+  </div>
+
+  <div id="sample7-response-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">content-type</span>: <span class="hljs-string">application/json; charset=utf-8</span>
+</code></pre>
+  </div>
+  <div id="sample7-response-body" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">code</span>": <span class="hljs-value"><span class="hljs-number">201</span></span>,
+  "<span class="hljs-attribute">data</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">error</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
+    "<span class="hljs-attribute">message</span>": <span class="hljs-value"><span class="hljs-string">"El pixel ha sido eliminado"</span>
+  </span>}
+</span>}</code></pre>
+  </div>
+
+</div>
+
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="group">
+          <a name="delete-id-pixellist"></a>
+          <h2>DELETE:id PixelList</h2>
+          <ul class="samples">
+            
+              <li>
+                <div class="summary">
+  <p>DELETE:id PixelList</p>
+
+</div>
+
+<div class="operation">
+
+  <div class="method color-DELETE">
+    DEL
+  </div>
+
+  <div class="request">
+    <div class="url">
+      DELETE
+      
+        <pre><code>/v1/pixelslist/<span class="hljs-attribute">:pixel</span></code></pre>
+      
+    </div>
+    Sample request
+    <div class="expanders">
+      
+        <a href="#sample6-url">url</a><span>
+      
+      
+        <a href="#sample6-request-headers">headers</a><span>
+      
+      
+      
+      <a href="#sample6-request-curl">curl</a><span>
+    </div>
+  </div>
+
+  <div id="sample6-url" class="collapsible">
+    <pre><code>/v1/pixelslist/fbec24b6-1d1e-4146-ab4d-629229c8cb1f</code></pre>
+  </div>
+  <div id="sample6-request-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">x-asd-apikey</span>: <span class="hljs-string">pub_nLbIjlCWNKAdB_O3qgTaoQ</span>
+</code></pre>
+  </div>
+  <div id="sample6-request-payload" class="collapsible">
+    
+  </div>
+  <div id="sample6-request-attachments" class="collapsible">
+    
+  </div>
+  <div id="sample6-request-curl" class="collapsible">
+    <pre><code class="wrap">curl -X <span class="hljs-keyword">DELETE</span> -H <span class="hljs-string">"x-asd-apikey: pub_nLbIjlCWNKAdB_O3qgTaoQ"</span> <span class="hljs-string">"https://api.asdeporte.com/v1/pixelslist/fbec24b6-1d1e-4146-ab4d-629229c8cb1f"</span></code></pre>
+  </div>
+
+  <div class="response">
+    Response 201 Created
+    <div class="expanders">
+      
+        <a href="#sample6-response-headers">headers</a>
+      
+      
+        <a href="#sample6-response-body">body</a>
+      
+    </div>
+  </div>
+
+  <div id="sample6-response-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">content-type</span>: <span class="hljs-string">application/json; charset=utf-8</span>
+</code></pre>
+  </div>
+  <div id="sample6-response-body" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">code</span>": <span class="hljs-value"><span class="hljs-number">201</span></span>,
+  "<span class="hljs-attribute">data</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">error</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
+    "<span class="hljs-attribute">message</span>": <span class="hljs-value"><span class="hljs-string">"El pixel ha sido eliminado"</span>
+  </span>}
+</span>}</code></pre>
+  </div>
+
+</div>
+
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="group">
+          <a name="get-list-pixel"></a>
+          <h2>GET:LIST Pixel</h2>
+          <ul class="samples">
+            
+              <li>
+                <div class="summary">
+  <p>GET:LIST Pixel</p>
+
+</div>
+
+<div class="operation">
+
+  <div class="method color-GET">
+    GET
+  </div>
+
+  <div class="request">
+    <div class="url">
+      GET
+      
+        <pre><code>/v1/pixels/list/</code></pre>
+      
+    </div>
+    Sample request
+    <div class="expanders">
+      
+        <a href="#sample5-url">url</a><span>
+      
+      
+        <a href="#sample5-request-headers">headers</a><span>
+      
+      
+      
+      <a href="#sample5-request-curl">curl</a><span>
+    </div>
+  </div>
+
+  <div id="sample5-url" class="collapsible">
+    <pre><code>/v1/pixels/list/</code></pre>
+  </div>
+  <div id="sample5-request-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">x-asd-apikey</span>: <span class="hljs-string">pub_nLbIjlCWNKAdB_O3qgTaoQ</span>
+</code></pre>
+  </div>
+  <div id="sample5-request-payload" class="collapsible">
+    
+  </div>
+  <div id="sample5-request-attachments" class="collapsible">
+    
+  </div>
+  <div id="sample5-request-curl" class="collapsible">
+    <pre><code class="wrap">curl -X <span class="hljs-keyword">GET</span> -H <span class="hljs-string">"x-asd-apikey: pub_nLbIjlCWNKAdB_O3qgTaoQ"</span> <span class="hljs-string">"https://api.asdeporte.com/v1/pixels/list/"</span></code></pre>
+  </div>
+
+  <div class="response">
+    Response 200 OK
+    <div class="expanders">
+      
+        <a href="#sample5-response-headers">headers</a>
+      
+      
+        <a href="#sample5-response-body">body</a>
+      
+    </div>
+  </div>
+
+  <div id="sample5-response-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">content-type</span>: <span class="hljs-string">application/json; charset=utf-8</span>
+</code></pre>
+  </div>
+  <div id="sample5-response-body" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">totalrecords</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+  "<span class="hljs-attribute">page</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+  "<span class="hljs-attribute">perpage</span>": <span class="hljs-value"><span class="hljs-number">10</span></span>,
+  "<span class="hljs-attribute">totalpages</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+  "<span class="hljs-attribute">records</span>": <span class="hljs-value">[
+    {
+      "<span class="hljs-attribute">pixelid</span>": <span class="hljs-value"><span class="hljs-string">"4ca14b63-aab0-4fb1-a0ad-a27848d54218"</span></span>,
+      "<span class="hljs-attribute">created</span>": <span class="hljs-value"><span class="hljs-string">"01/03/2018"</span></span>,
+      "<span class="hljs-attribute">deleted</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
+      "<span class="hljs-attribute">html</span>": <span class="hljs-value"><span class="hljs-string">"le html :v"</span></span>,
+      "<span class="hljs-attribute">pixel</span>": <span class="hljs-value"><span class="hljs-string">"fbec24b6-1d1e-4146-ab4d-629229c8cb1f"</span>
+    </span>}
+  ]
+</span>}</code></pre>
+  </div>
+
+</div>
+
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="group">
+          <a name="get-list-pixellist"></a>
+          <h2>GET:LIST PixelList</h2>
+          <ul class="samples">
+            
+              <li>
+                <div class="summary">
+  <p>GET:LIST PixelList</p>
+
+</div>
+
+<div class="operation">
+
+  <div class="method color-GET">
+    GET
+  </div>
+
+  <div class="request">
+    <div class="url">
+      GET
+      
+        <pre><code>/v1/pixelslist/list/</code></pre>
+      
+    </div>
+    Sample request
+    <div class="expanders">
+      
+        <a href="#sample2-url">url</a><span>
+      
+      
+        <a href="#sample2-request-headers">headers</a><span>
+      
+      
+      
+      <a href="#sample2-request-curl">curl</a><span>
+    </div>
+  </div>
+
+  <div id="sample2-url" class="collapsible">
+    <pre><code>/v1/pixelslist/list/</code></pre>
+  </div>
+  <div id="sample2-request-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">x-asd-apikey</span>: <span class="hljs-string">pub_nLbIjlCWNKAdB_O3qgTaoQ</span>
+</code></pre>
+  </div>
+  <div id="sample2-request-payload" class="collapsible">
+    
+  </div>
+  <div id="sample2-request-attachments" class="collapsible">
+    
+  </div>
+  <div id="sample2-request-curl" class="collapsible">
+    <pre><code class="wrap">curl -X <span class="hljs-keyword">GET</span> -H <span class="hljs-string">"x-asd-apikey: pub_nLbIjlCWNKAdB_O3qgTaoQ"</span> <span class="hljs-string">"https://api.asdeporte.com/v1/pixelslist/list/"</span></code></pre>
+  </div>
+
+  <div class="response">
+    Response 200 OK
+    <div class="expanders">
+      
+        <a href="#sample2-response-headers">headers</a>
+      
+      
+        <a href="#sample2-response-body">body</a>
+      
+    </div>
+  </div>
+
+  <div id="sample2-response-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">content-type</span>: <span class="hljs-string">application/json; charset=utf-8</span>
+</code></pre>
+  </div>
+  <div id="sample2-response-body" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">totalrecords</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+  "<span class="hljs-attribute">page</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+  "<span class="hljs-attribute">perpage</span>": <span class="hljs-value"><span class="hljs-number">10</span></span>,
+  "<span class="hljs-attribute">totalpages</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+  "<span class="hljs-attribute">records</span>": <span class="hljs-value">[
+    {
+      "<span class="hljs-attribute">pixelid</span>": <span class="hljs-value"><span class="hljs-string">"fbec24b6-1d1e-4146-ab4d-629229c8cb1f"</span></span>,
+      "<span class="hljs-attribute">created</span>": <span class="hljs-value"><span class="hljs-string">"01/03/2018"</span></span>,
+      "<span class="hljs-attribute">deleted</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
+      "<span class="hljs-attribute">eventid</span>": <span class="hljs-value"><span class="hljs-string">"63b6a3d8-2fa2-47f4-b13a-cc9348fbdbb8"</span></span>,
+      "<span class="hljs-attribute">pixelname</span>": <span class="hljs-value"><span class="hljs-string">"le pixelname :v"</span>
+    </span>}
+  ]
+</span>}</code></pre>
+  </div>
+
+</div>
+
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="group">
+          <a name="get-id-pixel"></a>
+          <h2>GET:id Pixel</h2>
+          <ul class="samples">
+            
+              <li>
+                <div class="summary">
+  <p>GET:id Pixel</p>
+
+</div>
+
+<div class="operation">
+
+  <div class="method color-GET">
+    GET
+  </div>
+
+  <div class="request">
+    <div class="url">
+      GET
+      
+        <pre><code>/v1/pixels/<span class="hljs-attribute">:pixel</span></code></pre>
+      
+    </div>
+    Sample request
+    <div class="expanders">
+      
+        <a href="#sample4-url">url</a><span>
+      
+      
+        <a href="#sample4-request-headers">headers</a><span>
+      
+      
+      
+      <a href="#sample4-request-curl">curl</a><span>
+    </div>
+  </div>
+
+  <div id="sample4-url" class="collapsible">
+    <pre><code>/v1/pixels/4ca14b63-aab0-4fb1-a0ad-a27848d54218</code></pre>
+  </div>
+  <div id="sample4-request-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">x-asd-apikey</span>: <span class="hljs-string">pub_nLbIjlCWNKAdB_O3qgTaoQ</span>
+</code></pre>
+  </div>
+  <div id="sample4-request-payload" class="collapsible">
+    
+  </div>
+  <div id="sample4-request-attachments" class="collapsible">
+    
+  </div>
+  <div id="sample4-request-curl" class="collapsible">
+    <pre><code class="wrap">curl -X <span class="hljs-keyword">GET</span> -H <span class="hljs-string">"x-asd-apikey: pub_nLbIjlCWNKAdB_O3qgTaoQ"</span> <span class="hljs-string">"https://api.asdeporte.com/v1/pixels/4ca14b63-aab0-4fb1-a0ad-a27848d54218"</span></code></pre>
+  </div>
+
+  <div class="response">
+    Response 200 OK
+    <div class="expanders">
+      
+        <a href="#sample4-response-headers">headers</a>
+      
+      
+        <a href="#sample4-response-body">body</a>
+      
+    </div>
+  </div>
+
+  <div id="sample4-response-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">content-type</span>: <span class="hljs-string">application/json; charset=utf-8</span>
+</code></pre>
+  </div>
+  <div id="sample4-response-body" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">code</span>": <span class="hljs-value"><span class="hljs-number">200</span></span>,
+  "<span class="hljs-attribute">data</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">pixelid</span>": <span class="hljs-value"><span class="hljs-string">"4ca14b63-aab0-4fb1-a0ad-a27848d54218"</span></span>,
+    "<span class="hljs-attribute">created</span>": <span class="hljs-value"><span class="hljs-string">"01/03/2018"</span></span>,
+    "<span class="hljs-attribute">deleted</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
+    "<span class="hljs-attribute">html</span>": <span class="hljs-value"><span class="hljs-string">"le html :v"</span></span>,
+    "<span class="hljs-attribute">pixel</span>": <span class="hljs-value"><span class="hljs-string">"fbec24b6-1d1e-4146-ab4d-629229c8cb1f"</span>
+  </span>}
+</span>}</code></pre>
+  </div>
+
+</div>
+
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="group">
+          <a name="get-id-pixellist"></a>
+          <h2>GET:id PixelList</h2>
+          <ul class="samples">
+            
+              <li>
+                <div class="summary">
+  <p>GET:id PixelList</p>
+
+</div>
+
+<div class="operation">
+
+  <div class="method color-GET">
+    GET
+  </div>
+
+  <div class="request">
+    <div class="url">
+      GET
+      
+        <pre><code>/v1/pixelslist/<span class="hljs-attribute">:pixel</span></code></pre>
+      
+    </div>
+    Sample request
+    <div class="expanders">
+      
+        <a href="#sample1-url">url</a><span>
+      
+      
+        <a href="#sample1-request-headers">headers</a><span>
+      
+      
+      
+      <a href="#sample1-request-curl">curl</a><span>
+    </div>
+  </div>
+
+  <div id="sample1-url" class="collapsible">
+    <pre><code>/v1/pixelslist/fbec24b6-1d1e-4146-ab4d-629229c8cb1f</code></pre>
+  </div>
+  <div id="sample1-request-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">x-asd-apikey</span>: <span class="hljs-string">pub_nLbIjlCWNKAdB_O3qgTaoQ</span>
+</code></pre>
+  </div>
+  <div id="sample1-request-payload" class="collapsible">
+    
+  </div>
+  <div id="sample1-request-attachments" class="collapsible">
+    
+  </div>
+  <div id="sample1-request-curl" class="collapsible">
+    <pre><code class="wrap">curl -X <span class="hljs-keyword">GET</span> -H <span class="hljs-string">"x-asd-apikey: pub_nLbIjlCWNKAdB_O3qgTaoQ"</span> <span class="hljs-string">"https://api.asdeporte.com/v1/pixelslist/fbec24b6-1d1e-4146-ab4d-629229c8cb1f"</span></code></pre>
+  </div>
+
+  <div class="response">
+    Response 200 OK
+    <div class="expanders">
+      
+        <a href="#sample1-response-headers">headers</a>
+      
+      
+        <a href="#sample1-response-body">body</a>
+      
+    </div>
+  </div>
+
+  <div id="sample1-response-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">content-type</span>: <span class="hljs-string">application/json; charset=utf-8</span>
+</code></pre>
+  </div>
+  <div id="sample1-response-body" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">code</span>": <span class="hljs-value"><span class="hljs-number">200</span></span>,
+  "<span class="hljs-attribute">data</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">pixelid</span>": <span class="hljs-value"><span class="hljs-string">"fbec24b6-1d1e-4146-ab4d-629229c8cb1f"</span></span>,
+    "<span class="hljs-attribute">created</span>": <span class="hljs-value"><span class="hljs-string">"01/03/2018"</span></span>,
+    "<span class="hljs-attribute">deleted</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
+    "<span class="hljs-attribute">eventid</span>": <span class="hljs-value"><span class="hljs-string">"63b6a3d8-2fa2-47f4-b13a-cc9348fbdbb8"</span></span>,
+    "<span class="hljs-attribute">pixelname</span>": <span class="hljs-value"><span class="hljs-string">"le pixelname :v"</span>
+  </span>}
+</span>}</code></pre>
+  </div>
+
+</div>
+
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="group">
+          <a name="post-pixel"></a>
+          <h2>POST Pixel</h2>
+          <ul class="samples">
+            
+              <li>
+                <div class="summary">
+  <p>POST Pixel</p>
+
+</div>
+
+<div class="operation">
+
+  <div class="method color-POST">
+    POST
+  </div>
+
+  <div class="request">
+    <div class="url">
+      POST
+      
+        <pre><code>/v1/pixels/<span class="hljs-attribute">:eventid</span></code></pre>
+      
+    </div>
+    Sample request
+    <div class="expanders">
+      
+        <a href="#sample3-url">url</a><span>
+      
+      
+        <a href="#sample3-request-headers">headers</a><span>
+      
+      
+        <a href="#sample3-request-payload">payload</a>
+      
+      
+      <a href="#sample3-request-curl">curl</a><span>
+    </div>
+  </div>
+
+  <div id="sample3-url" class="collapsible">
+    <pre><code>/v1/pixels/63b6a3d8-2fa2-47f4-b13a-cc9348fbdbb8</code></pre>
+  </div>
+  <div id="sample3-request-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">x-asd-apikey</span>: <span class="hljs-string">pub_nLbIjlCWNKAdB_O3qgTaoQ</span>
+<span class="hljs-attribute">content-type</span>: <span class="hljs-string">application/json</span>
+<span class="hljs-attribute">content-length</span>: <span class="hljs-string">68</span>
+</code></pre>
+  </div>
+  <div id="sample3-request-payload" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">html</span>": <span class="hljs-value"><span class="hljs-string">"le html :v"</span></span>,
+  "<span class="hljs-attribute">pixel</span>": <span class="hljs-value"><span class="hljs-string">"fbec24b6-1d1e-4146-ab4d-629229c8cb1f"</span>
+</span>}</code></pre>
+  </div>
+  <div id="sample3-request-attachments" class="collapsible">
+    
+  </div>
+  <div id="sample3-request-curl" class="collapsible">
+    <pre><code class="wrap">curl -X POST -H <span class="hljs-string">"x-asd-apikey: pub_nLbIjlCWNKAdB_O3qgTaoQ"</span> -H <span class="hljs-string">"content-type: application/json"</span> -H <span class="hljs-string">"content-length: 68"</span> -d <span class="hljs-string">'{"</span>html<span class="hljs-string">":"</span>le html :v<span class="hljs-string">","</span>pixel<span class="hljs-string">":"</span>fbec24b6-<span class="hljs-number">1</span>d1e-<span class="hljs-number">4146</span>-ab4d-<span class="hljs-number">629229</span>c8cb1f<span class="hljs-string">"}'</span> <span class="hljs-string">"https://api.asdeporte.com/v1/pixels/63b6a3d8-2fa2-47f4-b13a-cc9348fbdbb8"</span></code></pre>
+  </div>
+
+  <div class="response">
+    Response 201 Created
+    <div class="expanders">
+      
+        <a href="#sample3-response-headers">headers</a>
+      
+      
+        <a href="#sample3-response-body">body</a>
+      
+    </div>
+  </div>
+
+  <div id="sample3-response-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">content-type</span>: <span class="hljs-string">application/json; charset=utf-8</span>
+</code></pre>
+  </div>
+  <div id="sample3-response-body" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">code</span>": <span class="hljs-value"><span class="hljs-number">201</span></span>,
+  "<span class="hljs-attribute">data</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">pixelid</span>": <span class="hljs-value"><span class="hljs-string">"4ca14b63-aab0-4fb1-a0ad-a27848d54218"</span></span>,
+    "<span class="hljs-attribute">created</span>": <span class="hljs-value"><span class="hljs-string">"01/03/2018"</span></span>,
+    "<span class="hljs-attribute">deleted</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
+    "<span class="hljs-attribute">html</span>": <span class="hljs-value"><span class="hljs-string">"le html :v"</span></span>,
+    "<span class="hljs-attribute">pixel</span>": <span class="hljs-value"><span class="hljs-string">"fbec24b6-1d1e-4146-ab4d-629229c8cb1f"</span>
+  </span>}
+</span>}</code></pre>
+  </div>
+
+</div>
+
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="group">
+          <a name="post-pixellist"></a>
+          <h2>POST PixelList</h2>
+          <ul class="samples">
+            
+              <li>
+                <div class="summary">
+  <p>POST PixelList</p>
+
+</div>
+
+<div class="operation">
+
+  <div class="method color-POST">
+    POST
+  </div>
+
+  <div class="request">
+    <div class="url">
+      POST
+      
+        <pre><code>/v1/pixelslist/<span class="hljs-attribute">:eventid</span></code></pre>
+      
+    </div>
+    Sample request
+    <div class="expanders">
+      
+        <a href="#sample0-url">url</a><span>
+      
+      
+        <a href="#sample0-request-headers">headers</a><span>
+      
+      
+        <a href="#sample0-request-payload">payload</a>
+      
+      
+      <a href="#sample0-request-curl">curl</a><span>
+    </div>
+  </div>
+
+  <div id="sample0-url" class="collapsible">
+    <pre><code>/v1/pixelslist/63b6a3d8-2fa2-47f4-b13a-cc9348fbdbb8</code></pre>
+  </div>
+  <div id="sample0-request-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">x-asd-apikey</span>: <span class="hljs-string">pub_nLbIjlCWNKAdB_O3qgTaoQ</span>
+<span class="hljs-attribute">content-type</span>: <span class="hljs-string">application/json</span>
+<span class="hljs-attribute">content-length</span>: <span class="hljs-string">31</span>
+</code></pre>
+  </div>
+  <div id="sample0-request-payload" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">pixelname</span>": <span class="hljs-value"><span class="hljs-string">"le pixelname :v"</span>
+</span>}</code></pre>
+  </div>
+  <div id="sample0-request-attachments" class="collapsible">
+    
+  </div>
+  <div id="sample0-request-curl" class="collapsible">
+    <pre><code class="wrap">curl -X POST -H <span class="hljs-string">"x-asd-apikey: pub_nLbIjlCWNKAdB_O3qgTaoQ"</span> -H <span class="hljs-string">"content-type: application/json"</span> -H <span class="hljs-string">"content-length: 31"</span> -d <span class="hljs-string">'{"</span>pixelname<span class="hljs-string">":"</span>le pixelname :v<span class="hljs-string">"}'</span> <span class="hljs-string">"https://api.asdeporte.com/v1/pixelslist/63b6a3d8-2fa2-47f4-b13a-cc9348fbdbb8"</span></code></pre>
+  </div>
+
+  <div class="response">
+    Response 201 Created
+    <div class="expanders">
+      
+        <a href="#sample0-response-headers">headers</a>
+      
+      
+        <a href="#sample0-response-body">body</a>
+      
+    </div>
+  </div>
+
+  <div id="sample0-response-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">content-type</span>: <span class="hljs-string">application/json; charset=utf-8</span>
+</code></pre>
+  </div>
+  <div id="sample0-response-body" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">code</span>": <span class="hljs-value"><span class="hljs-number">201</span></span>,
+  "<span class="hljs-attribute">data</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">pixelid</span>": <span class="hljs-value"><span class="hljs-string">"fbec24b6-1d1e-4146-ab4d-629229c8cb1f"</span></span>,
+    "<span class="hljs-attribute">created</span>": <span class="hljs-value"><span class="hljs-string">"01/03/2018"</span></span>,
+    "<span class="hljs-attribute">deleted</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
+    "<span class="hljs-attribute">eventid</span>": <span class="hljs-value"><span class="hljs-string">"63b6a3d8-2fa2-47f4-b13a-cc9348fbdbb8"</span></span>,
+    "<span class="hljs-attribute">pixelname</span>": <span class="hljs-value"><span class="hljs-string">"le pixelname :v"</span>
+  </span>}
+</span>}</code></pre>
+  </div>
+
+</div>
+
+              </li>
+            
+          </ul>
+        </div>
+      
+      
+    </div>
+
+    <footer>
+  <div class="row">
+    <div class="medium-8 columns">
+      <ul class="no-bullet">
+        <li>
+          Documentation generated on March 1st 2018, 4:07 pm
+        </li>
+        <li>
+          <a href="http://github.com/rprieto/supersamples">
+            Powered by supersamples
+            <div class="logo">
+              <div class="swatch color-GET"></div>
+              <div class="swatch color-POST"></div>
+              <div class="swatch color-PUT"></div>
+              <div class="swatch color-DELETE"></div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="scripts/zepto.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+  </body>
+
+</html>

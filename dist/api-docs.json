@@ -1,0 +1,695 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "v0.1.0",
+    "title": "REST API para servicios de BBVA",
+    "description": "Servicios temporales para el manejo de documentos"
+  },
+  "basePath": "/api",
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/expediente": {
+      "get": {
+        "tags": [
+          "Expediente"
+        ],
+        "description": "Listado de todos los expedientes.",
+        "operationId": "expedienteGet",
+        "responses": {
+          "200": {
+            "description": "Esta respuesta se da cuando se encuentra al menos un elemento de la lista de expedientes.",
+            "schema": {
+              "$ref": "#/definitions/ExpedienteGetList"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "403": {
+            "$ref": "#/responses/403"
+          },
+          "500": {
+            "$ref": "#/responses/500"
+          }
+        },
+        "x-swagger-router-controller": "Expedientes"
+      }
+    },
+    "/expediente/{id}": {
+      "get": {
+        "tags": [
+          "Expediente"
+        ],
+        "description": "Permite obtener un Expediente por medio de su ID.",
+        "operationId": "expedienteGetID",
+        "parameters": [
+          {
+            "$ref": "#/parameters/idExpediente"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Esta respuesta se obtiene al obtenerse el expediente de manera exitosa",
+            "schema": {
+              "$ref": "#/definitions/ExpedienteGetID"
+            }
+          },
+          "400": {
+            "description": "Petición incorrecta",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "401": {
+            "description": "Invalid **auth_key**",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "403": {
+            "description": "**auth_key** is missing",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Incorrect **resourceId**",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "500": {
+            "description": "Something went wrong. Please try again later.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [
+          {
+            "auth_key": [
+
+            ]
+          }
+        ],
+        "x-swagger-router-controller": "Expedientes"
+      },
+      "put": {
+        "tags": [
+          "Expediente"
+        ],
+        "description": "Allows update a resource",
+        "operationId": "expedientePutID",
+        "parameters": [
+          {
+            "$ref": "#/parameters/idExpediente"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "La respuesta será un objeto que contiene la información del expediente actualizado.",
+            "schema": {
+              "$ref": "#/definitions/ExpedienteIDSummary"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "401": {
+            "description": "Invalid **auth_key**",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "403": {
+            "description": "**auth_key** is missing",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Incorrect **resourceId**",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "500": {
+            "description": "Something went wrong. Please try again later.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [
+          {
+            "auth_key": [
+
+            ]
+          }
+        ],
+        "x-swagger-router-controller": "Expedientes"
+      }
+    },
+    "/bucket": {
+      "get": {
+        "tags": [
+          "Bucket"
+        ],
+        "description": "Listado de todos los expedientes.",
+        "operationId": "bucketGet",
+        "responses": {
+          "200": {
+            "description": "Esta respuesta se da cuando se encuentra al menos un elemento de la lista de buckets.",
+            "schema": {
+              "$ref": "#/definitions/BucketGetList"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "403": {
+            "$ref": "#/responses/403"
+          },
+          "500": {
+            "$ref": "#/responses/500"
+          }
+        },
+        "x-swagger-router-controller": "Bucket"
+      }
+    },
+    "/catdocumento": {
+      "get": {
+        "tags": [
+          "CatDocumento"
+        ],
+        "description": "Listado de todos los expedientes.",
+        "operationId": "catdocumentoGet",
+        "responses": {
+          "200": {
+            "description": "Esta respuesta se da cuando se encuentra al menos un elemento de la lista de las categorías de documentos.",
+            "schema": {
+              "$ref": "#/definitions/CatDocumentoGetList"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "403": {
+            "$ref": "#/responses/403"
+          },
+          "500": {
+            "$ref": "#/responses/500"
+          }
+        },
+        "x-swagger-router-controller": "CatDocumento"
+      }
+    },
+    "/documento": {
+      "get": {
+        "tags": [
+          "Documento"
+        ],
+        "description": "Listado de todos los expedientes.",
+        "operationId": "documentoGet",
+        "responses": {
+          "200": {
+            "description": "Esta respuesta se da cuando se encuentra al menos un elemento de la lista de las categorías de documentos.",
+            "schema": {
+              "$ref": "#/definitions/DocumentoGetList"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "403": {
+            "$ref": "#/responses/403"
+          },
+          "500": {
+            "$ref": "#/responses/500"
+          }
+        },
+        "x-swagger-router-controller": "Documento"
+      }
+    },
+    "/archivo": {
+      "get": {
+        "tags": [
+          "Archivo"
+        ],
+        "description": "Listado de todos los expedientes.",
+        "operationId": "archivoGet",
+        "responses": {
+          "200": {
+            "description": "Esta respuesta se da cuando se encuentra al menos un elemento de la lista de las categorías de documentos.",
+            "schema": {
+              "$ref": "#/definitions/ArchivoGetList"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "403": {
+            "$ref": "#/responses/403"
+          },
+          "500": {
+            "$ref": "#/responses/500"
+          }
+        },
+        "x-swagger-router-controller": "Archivo"
+      }
+    },
+    "/cliente": {
+      "get": {
+        "tags": [
+          "Cliente"
+        ],
+        "description": "Listado de todos los expedientes.",
+        "operationId": "clienteGet",
+        "responses": {
+          "200": {
+            "description": "Esta respuesta se da cuando se encuentra al menos un elemento de la lista de las categorías de documentos.",
+            "schema": {
+              "$ref": "#/definitions/ClienteGetList"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "403": {
+            "$ref": "#/responses/403"
+          },
+          "500": {
+            "$ref": "#/responses/500"
+          }
+        },
+        "x-swagger-router-controller": "Cliente"
+      }
+    }
+  },
+  "securityDefinitions": {
+    "auth_key": {
+      "description": "**auth_key** debe ser enviada con todas las peticiones del cliente. La auth_key ayuda al servidor a validad que el usuario esté loggeado corréctamente",
+      "type": "apiKey",
+      "name": "auth_key",
+      "in": "header"
+    }
+  },
+  "definitions": {
+    "ConflictDataError": {
+      "description": "Conflict info",
+      "type": "object",
+      "properties": {
+        "field": {
+          "type": "string"
+        },
+        "originalValue": {
+          "type": "string"
+        },
+        "currentValue": {
+          "type": "string"
+        }
+      }
+    },
+    "Error": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "description": "El mensaje de error ''",
+          "type": "string"
+        }
+      }
+    },
+    "UpdateError": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "description": "El mensaje de error ''",
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/ConflictDataError"
+        }
+      }
+    },
+    "DocumentoSummary": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Identificador del Documento",
+          "type": "integer"
+        },
+        "crDigitalizacion": {
+          "description": "Código CR del documento digitalizado",
+          "type": "string"
+        },
+        "descripcion": {
+          "description": "Descripción del documento",
+          "type": "string"
+        },
+        "CatDocumento": {
+          "$ref": "#/definitions/CatDocumentoSummary"
+        },
+        "extension": {
+          "description": "Extensión del documento",
+          "type": "string"
+        },
+        "nombre": {
+          "description": "Nombre del documento sin extensión",
+          "type": "string"
+        },
+        "numeroPaginas": {
+          "description": "Número total de páginas del documento, si aplica. (Solo PDF)",
+          "type": "string"
+        },
+        "tamanoArchivo": {
+          "description": "Tamaño en Kb del archivo",
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Fecha en que se subió el documento. En formato 'DD-MM-YYYY hh:mm:ss' (UTC)"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Fecha en que se actualizó el documento. En formato 'DD-MM-YYYY hh:mm:ss' (UTC). Si no aplica se usará la fecha de creación"
+        }
+      }
+    },
+    "ClienteSummary": {
+      "type": "object",
+      "description": "Objeto con atributos del cliente relacionado al Expediente",
+      "properties": {
+        "id": {
+          "description": "Identificador del Cliente",
+          "type": "integer"
+        },
+        "nombre": {
+          "description": "Nombre del Cliente",
+          "type": "string"
+        },
+        "codigoCliente": {
+          "description": "Código del Cliente",
+          "type": "string"
+        }
+      }
+    },
+    "ArchivoSummary": {
+      "type": "object",
+      "description": "Objeto con atributos del archivo que compone al Expediente",
+      "properties": {
+        "id": {
+          "description": "Identificador del Archivo",
+          "type": "integer"
+        },
+        "registro": {
+          "description": "Registro del Archivo",
+          "type": "string"
+        },
+        "clave": {
+          "description": "Clave del registro del Archivo",
+          "type": "string"
+        },
+        "folio": {
+          "description": "Folio del Archivo",
+          "type": "string"
+        },
+        "fecha": {
+          "description": "Fecha de creacón del Archivo",
+          "type": "string"
+        },
+        "Documentos": {
+          "type": "array",
+          "description": "Arreglo de objetos con documentos dentro del Expediente y relacionados al Cliente",
+          "items": {
+            "$ref": "#/definitions/DocumentoSummary"
+          }
+        }
+      }
+    },
+    "ExpedienteIDSummary": {
+      "type": "object",
+      "description": "Expediente encontrado a través del ID ingresado",
+      "properties": {
+        "id": {
+          "description": "Identificador del Expediente",
+          "type": "string"
+        },
+        "folioExpediente": {
+          "description": "Folio del Expediente",
+          "type": "string"
+        },
+        "Cliente": {
+          "$ref": "#/definitions/ClienteSummary"
+        },
+        "Archivo": {
+          "$ref": "#/definitions/ArchivoSummary"
+        }
+      }
+    },
+    "ExpedienteListSummary": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Identificador del Expediente",
+          "type": "string"
+        },
+        "folioExpediente": {
+          "description": "Folio del Expediente",
+          "type": "string"
+        },
+        "idCliente": {
+          "description": "Identificador del Cliente en el Expediente",
+          "type": "integer"
+        },
+        "idBucket": {
+          "description": "Identificador del Bucket en el Expediente",
+          "type": "string"
+        }
+      }
+    },
+    "BucketListSummary": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Identificador del Bucket",
+          "type": "string"
+        },
+        "name": {
+          "description": "Nombre del Bucket",
+          "type": "string"
+        },
+        "description": {
+          "description": "Descripción del bucket",
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Fecha en que se subió el bucket. En formato 'DD-MM-YYYY hh:mm:ss' (UTC)"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Fecha en que se actualizó el bucket. En formato 'DD-MM-YYYY hh:mm:ss' (UTC). Si no aplica se usará la fecha de creación"
+        }
+      }
+    },
+    "CatDocumentoSummary": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Identificador de la categoría del documento",
+          "type": "string"
+        },
+        "nombre": {
+          "description": "Nombre de la categoría del documento",
+          "type": "string"
+        },
+        "descripcion": {
+          "description": "Descripción o referencia de la categoría",
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Fecha en que se subió la categoría. En formato 'DD-MM-YYYY hh:mm:ss' (UTC)"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Fecha en que se actualizó la categoría. En formato 'DD-MM-YYYY hh:mm:ss' (UTC). Si no aplica se usará la fecha de creación"
+        }
+      }
+    },
+    "DocumentoGetList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/DocumentoSummary"
+      }
+    },
+    "ArchivoGetList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ArchivoSummary"
+      }
+    },
+    "ClienteGetList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ClienteSummary"
+      }
+    },
+    "CatDocumentoGetList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/CatDocumentoSummary"
+      }
+    },
+    "BucketGetList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/BucketListSummary"
+      }
+    },
+    "ExpedienteGetList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ExpedienteListSummary"
+      }
+    },
+    "ExpedienteGetID": {
+      "$ref": "#/definitions/ExpedienteIDSummary"
+    },
+    "ExpedienteGet": {
+      "$ref": "#/definitions/ExpedienteListSummary"
+    }
+  },
+  "parameters": {
+    "idExpediente": {
+      "name": "id",
+      "in": "path",
+      "description": "Identificador de Expediente",
+      "required": true,
+      "type": "integer",
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "resourceId": {
+      "name": "resourceId",
+      "in": "path",
+      "description": "Resource identifier as an UUID v4 (random) in canonical format",
+      "required": true,
+      "type": "string",
+      "minLength": 36,
+      "maxLength": 36
+    },
+    "page": {
+      "name": "current_page",
+      "in": "query",
+      "description": "Current page, base 1, defaults to all if omitted. Returns an empty set if it is greater than available pages.",
+      "required": false,
+      "type": "integer",
+      "format": "int32"
+    },
+    "pageSize": {
+      "name": "per_page",
+      "in": "query",
+      "description": "Number of resources per page, defaults to all if omitted or the value is greater than the available resources.",
+      "required": false,
+      "type": "integer",
+      "format": "int32"
+    },
+    "filter": {
+      "name": "filter",
+      "in": "query",
+      "description": "Filter criteria for the results, using basic SQL operatos.",
+      "required": false,
+      "type": "string"
+    },
+    "order": {
+      "name": "order",
+      "in": "query",
+      "description": "Column name on which to base the order, followed by the direction ('asc' or 'desc'). Defaults to 'createTime desc', if the direction is omitted defaults to 'asc'.",
+      "required": false,
+      "type": "string",
+      "default": "createTime desc"
+    }
+  },
+  "responses": {
+    "400": {
+      "description": "El tipo de petición es inconrrecta a los parámetros aceptados por el servidor. <br>El mensaje de error es 'Bad Request'. <br>**TODO:** define the format.",
+      "schema": {
+        "$ref": "#/definitions/UpdateError"
+      }
+    },
+    "401": {
+      "description": "Invalid `auth_key`.<br>The error message is 'Unauthorized'",
+      "schema": {
+        "$ref": "#/definitions/Error"
+      },
+      "examples": {
+        "application/json": {
+          "error": "Unauthorized"
+        }
+      }
+    },
+    "403": {
+      "description": "`auth_key` is missing.<br>The error message is 'Forbidden'",
+      "schema": {
+        "$ref": "#/definitions/Error"
+      },
+      "examples": {
+        "error": "Forbidden"
+      }
+    },
+    "404": {
+      "description": "Incorrect `resourceId`.<br>The error message is 'Not Found'",
+      "schema": {
+        "$ref": "#/definitions/Error"
+      },
+      "examples": {
+        "error": "Not Found"
+      }
+    },
+    "409": {
+      "description": "Update conflict, changes not commited. <br>The response object includes information about the conflict so the application can resolve it and resubmit. <br>**TODO**: define the format.",
+      "schema": {
+        "$ref": "#/definitions/Error"
+      }
+    },
+    "500": {
+      "description": "Something went wrong.",
+      "schema": {
+        "$ref": "#/definitions/Error"
+      }
+    }
+  }
+}

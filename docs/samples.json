@@ -1,0 +1,305 @@
+[
+  {
+    "name": "POST PixelList",
+    "summary": "POST PixelList",
+    "hierarchy": [
+      "Asdeporte miscroservice for Test",
+      "POST PixelList"
+    ],
+    "request": {
+      "route": "/v1/pixelslist/:eventid",
+      "headers": {
+        "x-asd-apikey": "pub_nLbIjlCWNKAdB_O3qgTaoQ",
+        "content-type": "application/json",
+        "content-length": 31
+      },
+      "method": "POST",
+      "path": "/v1/pixelslist/63b6a3d8-2fa2-47f4-b13a-cc9348fbdbb8",
+      "data": {
+        "pixelname": "le pixelname :v"
+      }
+    },
+    "response": {
+      "status": 201,
+      "headers": {
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": {
+        "code": 201,
+        "data": {
+          "pixelid": "fbec24b6-1d1e-4146-ab4d-629229c8cb1f",
+          "created": "01/03/2018",
+          "deleted": false,
+          "eventid": "63b6a3d8-2fa2-47f4-b13a-cc9348fbdbb8",
+          "pixelname": "le pixelname :v"
+        }
+      }
+    },
+    "snippets": {
+      "curl": "curl -X POST -H \"x-asd-apikey: pub_nLbIjlCWNKAdB_O3qgTaoQ\" -H \"content-type: application/json\" -H \"content-length: 31\" -d '{\"pixelname\":\"le pixelname :v\"}' \"https://api.asdeporte.com/v1/pixelslist/63b6a3d8-2fa2-47f4-b13a-cc9348fbdbb8\""
+    },
+    "id": 0
+  },
+  {
+    "name": "GET:id PixelList",
+    "summary": "GET:id PixelList",
+    "hierarchy": [
+      "Asdeporte miscroservice for Test",
+      "GET:id PixelList"
+    ],
+    "request": {
+      "route": "/v1/pixelslist/:pixel",
+      "headers": {
+        "x-asd-apikey": "pub_nLbIjlCWNKAdB_O3qgTaoQ"
+      },
+      "method": "GET",
+      "path": "/v1/pixelslist/fbec24b6-1d1e-4146-ab4d-629229c8cb1f"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": {
+        "code": 200,
+        "data": {
+          "pixelid": "fbec24b6-1d1e-4146-ab4d-629229c8cb1f",
+          "created": "01/03/2018",
+          "deleted": false,
+          "eventid": "63b6a3d8-2fa2-47f4-b13a-cc9348fbdbb8",
+          "pixelname": "le pixelname :v"
+        }
+      }
+    },
+    "snippets": {
+      "curl": "curl -X GET -H \"x-asd-apikey: pub_nLbIjlCWNKAdB_O3qgTaoQ\" \"https://api.asdeporte.com/v1/pixelslist/fbec24b6-1d1e-4146-ab4d-629229c8cb1f\""
+    },
+    "id": 1
+  },
+  {
+    "name": "GET:LIST PixelList",
+    "summary": "GET:LIST PixelList",
+    "hierarchy": [
+      "Asdeporte miscroservice for Test",
+      "GET:LIST PixelList"
+    ],
+    "request": {
+      "route": "/v1/pixelslist/list/",
+      "headers": {
+        "x-asd-apikey": "pub_nLbIjlCWNKAdB_O3qgTaoQ"
+      },
+      "method": "GET",
+      "path": "/v1/pixelslist/list/"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": {
+        "totalrecords": 1,
+        "page": 1,
+        "perpage": 10,
+        "totalpages": 1,
+        "records": [
+          {
+            "pixelid": "fbec24b6-1d1e-4146-ab4d-629229c8cb1f",
+            "created": "01/03/2018",
+            "deleted": false,
+            "eventid": "63b6a3d8-2fa2-47f4-b13a-cc9348fbdbb8",
+            "pixelname": "le pixelname :v"
+          }
+        ]
+      }
+    },
+    "snippets": {
+      "curl": "curl -X GET -H \"x-asd-apikey: pub_nLbIjlCWNKAdB_O3qgTaoQ\" \"https://api.asdeporte.com/v1/pixelslist/list/\""
+    },
+    "id": 2
+  },
+  {
+    "name": "POST Pixel",
+    "summary": "POST Pixel",
+    "hierarchy": [
+      "Asdeporte miscroservice for Test",
+      "POST Pixel"
+    ],
+    "request": {
+      "route": "/v1/pixels/:eventid",
+      "headers": {
+        "x-asd-apikey": "pub_nLbIjlCWNKAdB_O3qgTaoQ",
+        "content-type": "application/json",
+        "content-length": 68
+      },
+      "method": "POST",
+      "path": "/v1/pixels/63b6a3d8-2fa2-47f4-b13a-cc9348fbdbb8",
+      "data": {
+        "html": "le html :v",
+        "pixel": "fbec24b6-1d1e-4146-ab4d-629229c8cb1f"
+      }
+    },
+    "response": {
+      "status": 201,
+      "headers": {
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": {
+        "code": 201,
+        "data": {
+          "pixelid": "4ca14b63-aab0-4fb1-a0ad-a27848d54218",
+          "created": "01/03/2018",
+          "deleted": false,
+          "html": "le html :v",
+          "pixel": "fbec24b6-1d1e-4146-ab4d-629229c8cb1f"
+        }
+      }
+    },
+    "snippets": {
+      "curl": "curl -X POST -H \"x-asd-apikey: pub_nLbIjlCWNKAdB_O3qgTaoQ\" -H \"content-type: application/json\" -H \"content-length: 68\" -d '{\"html\":\"le html :v\",\"pixel\":\"fbec24b6-1d1e-4146-ab4d-629229c8cb1f\"}' \"https://api.asdeporte.com/v1/pixels/63b6a3d8-2fa2-47f4-b13a-cc9348fbdbb8\""
+    },
+    "id": 3
+  },
+  {
+    "name": "GET:id Pixel",
+    "summary": "GET:id Pixel",
+    "hierarchy": [
+      "Asdeporte miscroservice for Test",
+      "GET:id Pixel"
+    ],
+    "request": {
+      "route": "/v1/pixels/:pixel",
+      "headers": {
+        "x-asd-apikey": "pub_nLbIjlCWNKAdB_O3qgTaoQ"
+      },
+      "method": "GET",
+      "path": "/v1/pixels/4ca14b63-aab0-4fb1-a0ad-a27848d54218"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": {
+        "code": 200,
+        "data": {
+          "pixelid": "4ca14b63-aab0-4fb1-a0ad-a27848d54218",
+          "created": "01/03/2018",
+          "deleted": false,
+          "html": "le html :v",
+          "pixel": "fbec24b6-1d1e-4146-ab4d-629229c8cb1f"
+        }
+      }
+    },
+    "snippets": {
+      "curl": "curl -X GET -H \"x-asd-apikey: pub_nLbIjlCWNKAdB_O3qgTaoQ\" \"https://api.asdeporte.com/v1/pixels/4ca14b63-aab0-4fb1-a0ad-a27848d54218\""
+    },
+    "id": 4
+  },
+  {
+    "name": "GET:LIST Pixel",
+    "summary": "GET:LIST Pixel",
+    "hierarchy": [
+      "Asdeporte miscroservice for Test",
+      "GET:LIST Pixel"
+    ],
+    "request": {
+      "route": "/v1/pixels/list/",
+      "headers": {
+        "x-asd-apikey": "pub_nLbIjlCWNKAdB_O3qgTaoQ"
+      },
+      "method": "GET",
+      "path": "/v1/pixels/list/"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": {
+        "totalrecords": 1,
+        "page": 1,
+        "perpage": 10,
+        "totalpages": 1,
+        "records": [
+          {
+            "pixelid": "4ca14b63-aab0-4fb1-a0ad-a27848d54218",
+            "created": "01/03/2018",
+            "deleted": false,
+            "html": "le html :v",
+            "pixel": "fbec24b6-1d1e-4146-ab4d-629229c8cb1f"
+          }
+        ]
+      }
+    },
+    "snippets": {
+      "curl": "curl -X GET -H \"x-asd-apikey: pub_nLbIjlCWNKAdB_O3qgTaoQ\" \"https://api.asdeporte.com/v1/pixels/list/\""
+    },
+    "id": 5
+  },
+  {
+    "name": "DELETE:id PixelList",
+    "summary": "DELETE:id PixelList",
+    "hierarchy": [
+      "Asdeporte miscroservice for Test",
+      "DELETE:id PixelList"
+    ],
+    "request": {
+      "route": "/v1/pixelslist/:pixel",
+      "headers": {
+        "x-asd-apikey": "pub_nLbIjlCWNKAdB_O3qgTaoQ"
+      },
+      "method": "DELETE",
+      "path": "/v1/pixelslist/fbec24b6-1d1e-4146-ab4d-629229c8cb1f"
+    },
+    "response": {
+      "status": 201,
+      "headers": {
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": {
+        "code": 201,
+        "data": {
+          "error": false,
+          "message": "El pixel ha sido eliminado"
+        }
+      }
+    },
+    "snippets": {
+      "curl": "curl -X DELETE -H \"x-asd-apikey: pub_nLbIjlCWNKAdB_O3qgTaoQ\" \"https://api.asdeporte.com/v1/pixelslist/fbec24b6-1d1e-4146-ab4d-629229c8cb1f\""
+    },
+    "id": 6
+  },
+  {
+    "name": "DELETE:id Pixel",
+    "summary": "DELETE:id Pixel",
+    "hierarchy": [
+      "Asdeporte miscroservice for Test",
+      "DELETE:id Pixel"
+    ],
+    "request": {
+      "route": "/v1/pixels/:pixel",
+      "headers": {
+        "x-asd-apikey": "pub_nLbIjlCWNKAdB_O3qgTaoQ"
+      },
+      "method": "DELETE",
+      "path": "/v1/pixels/4ca14b63-aab0-4fb1-a0ad-a27848d54218"
+    },
+    "response": {
+      "status": 201,
+      "headers": {
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": {
+        "code": 201,
+        "data": {
+          "error": false,
+          "message": "El pixel ha sido eliminado"
+        }
+      }
+    },
+    "snippets": {
+      "curl": "curl -X DELETE -H \"x-asd-apikey: pub_nLbIjlCWNKAdB_O3qgTaoQ\" \"https://api.asdeporte.com/v1/pixels/4ca14b63-aab0-4fb1-a0ad-a27848d54218\""
+    },
+    "id": 7
+  }
+]
